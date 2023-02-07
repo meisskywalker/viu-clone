@@ -24,6 +24,7 @@ function App() {
           <Route path='movie/:movieId' element={<DetailMovie isMovie />} />
         </Route>
         <Route name="search" path="/search/:query" element={<Search/>}/>
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>
   )
