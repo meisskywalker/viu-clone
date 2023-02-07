@@ -83,7 +83,7 @@ const Nav = () => {
             >
               Anime
             </Link>
-            <div className='spacer'></div>
+            <div className='spacer spacer-nav'></div>
           </div>
         </div>
         <div className='nav__menu-right'>
