@@ -99,10 +99,6 @@
   padding: 5px;
 }
 
-.spacer {
-  display: none;
-}
-
 @media (max-width: 425px) {
   .nav__menu-list {
     position: absolute;
