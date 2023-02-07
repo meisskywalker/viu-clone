@@ -1,5 +1,5 @@
 import React from "react"
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes, Navigate } from "react-router-dom"
 import Nav from "./components/Nav/Nav.component"
 import "./App.css"
 import HomeView from "./views/Home/Home.view"
