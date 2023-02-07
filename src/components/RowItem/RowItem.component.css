@@ -1,0 +1,38 @@
+.row__item {
+  height: 275px;
+  width: 175px;
+  border-radius: 8px;
+}
+
+.row__item-play {
+  background: rgba(17, 17, 17, 0.5);
+  width: inherit;
+  height: inherit;
+  opacity: 0;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row__item-play:hover {
+  opacity: 1;
+}
+
+.row__item-button {
+  width: 75px;
+  height: 75px;
+  background-color: #ffbf00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+@media (max-width: 425px) {
+  .row__item {
+    width: 125px;
+    height: 200px;
+  }
+}

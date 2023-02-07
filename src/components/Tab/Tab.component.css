@@ -1,0 +1,35 @@
+.tab {
+  padding: 10px 2rem;
+}
+
+.tab__items {
+  display: flex;
+  padding: 10px 2rem;
+}
+
+.tab__item {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #ACA9A9;
+  font-weight: 500;
+  transition: all 0.2s;
+  border-bottom: 2px solid transparent;
+}
+
+.tab__item:hover {
+  color: #ffbf00
+}
+
+.tab__item.active {
+  color: #ffbf00
+}
+
+.tab__item.active {
+  border-bottom: 2px solid #ffbf00;
+}
+
+.tab__content-items {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}

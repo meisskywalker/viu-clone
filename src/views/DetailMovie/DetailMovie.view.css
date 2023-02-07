@@ -1,0 +1,17 @@
+.detail-movie__info {
+  padding: 0 2rem;
+  padding-top: 20px;
+}
+
+.detail-movie__title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.detail-movie__overview {
+  width: 60%;
+  padding-top: 5px;
+  color: #ACA9A9;
+  font-size: 15px;
+}

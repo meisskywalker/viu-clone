@@ -6,9 +6,11 @@
 }
 
 .banner__contents {
-  margin-left: 30px;
-  padding-top: 140px;
-  height: 190px;
+  margin-left: 2rem;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .banner__title {
@@ -22,4 +24,125 @@
   font-size: 0.8rem;
   height: 80px;
   max-width: 360px;
+}
+
+.banner__contents-detail {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+}
+
+.banner__contents-fade {
+  height: 100px;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.4),
+    #111
+  );
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem 20px 2rem;
+}
+
+.banner__info-detail {
+  width: 950px;
+}
+
+.banner__title-detail {
+  font-size: 46px;
+  font-weight: 600;
+}
+
+.banner__tag {
+  background-color: rgba(231, 238, 234, 0.2);
+  padding: 2px 7px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.banner__buttons-detail {
+  display: flex;
+}
+
+.banner__button-detail {
+  background-color: #ffbf00;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  color: #664c00;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.banner__button-detail span {
+  margin-left: 5px;
+  color: #664c00;
+  white-space: nowrap;
+}
+
+.banner__button-utils {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__button-util {
+  padding: 7px;
+  background-color: rgba(231, 238, 234, 0.2);
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .banner__button-detail span {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .banner__contents-fade {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner__contents-fade {
+    height: auto;
+    gap: 10px;
+  }
+
+  .banner__info-detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner__title-detail {
+    text-align: center;
+ }
+
+  .banner__tags {
+    width: calc(425px - 4rem);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .banner__tag {
+    white-space: nowrap;
+  }
 }

@@ -1,6 +1,5 @@
 .row {
   color: white;
-  margin: 0 30px;
   padding: 15px 0;
 }
 
@@ -31,13 +30,13 @@
 .row__container {
   display: flex;
   overflow: auto;
-  width: calc(100vw - 70px);
 }
 
 .row__posters {
   display: flex;
   flex-wrap: nowrap;
   margin-top: 15px;
+  gap: 20px;
 }
 
 .row__container::-webkit-scrollbar {
@@ -75,4 +74,10 @@
   align-items: center;
   border-radius: 50%;
   opacity: 0.8;
+}
+
+@media (max-width: 425px) {
+  .row {
+    margin: 0;
+  }
 }

@@ -1,0 +1,12 @@
+.row-v2__posters {
+  display: flex;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media (max-width: 425px) {
+  .row-v2__posters {
+    justify-content: center;
+  }
+}
