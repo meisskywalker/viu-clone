@@ -6,9 +6,9 @@ import { useLikedMoviesStore } from "../../stores"
 const LikedMovies = () => {
   const getMovies = useLikedMoviesStore((state) => state.movies)
   return (
-    <div className="liked-movies">
+    <div className='liked-movies'>
       <h1>Favorites</h1>
-      <RowV2 movies={getMovies} />
+      <RowV2 movies={getMovies} random />
     </div>
   )
 }
