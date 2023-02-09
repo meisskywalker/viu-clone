@@ -83,6 +83,13 @@ const Nav = () => {
             >
               Anime
             </Link>
+            <Link
+              className='nav__menu-item'
+              to={`/${textToKebab("Favorites")}`}
+              onClick={handleFromHome}
+            >
+              Favorites
+            </Link>
             <div className='spacer spacer-nav'></div>
           </div>
         </div>

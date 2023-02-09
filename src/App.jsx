@@ -7,6 +7,7 @@ import ListMovies from "./views/ListMovies/ListMovies.view"
 import DetailMovie from "./views/DetailMovie/DetailMovie.view"
 import ListAll from "./views/ListAll/ListAll.view"
 import Search from "./views/Search/Search.view"
+import LikedMovies from "./views/LikedMovies/LikedMovies.view"
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='movie/:movieId' element={<DetailMovie isMovie />} />
         </Route>
         <Route name="search" path="/search/:query" element={<Search/>}/>
+        <Route name="likedMovies" path="/favorites" element={<LikedMovies/>}/>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>

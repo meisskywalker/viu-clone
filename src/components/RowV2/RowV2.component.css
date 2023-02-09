@@ -1,6 +1,6 @@
 .row-v2__posters {
   display: flex;
-  margin-top: 15px;
+  padding-top: 15px;
   flex-wrap: wrap;
   gap: 30px;
 }

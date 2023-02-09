@@ -30,6 +30,13 @@
   opacity: 0.8;
 }
 
+@media (max-width: 768px) {
+  .row__item {
+    width: 150px;
+    height: 250px;
+  }
+}
+
 @media (max-width: 425px) {
   .row__item {
     width: 125px;

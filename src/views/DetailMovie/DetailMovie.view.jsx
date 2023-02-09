@@ -51,7 +51,7 @@ const DetailMovie = ({ isMovie = false }) => {
   }, [movieId])
 
   useEffect(() => {
-    const exist = getMovies.filter((movie) => movie === parseInt(movieId))
+    const exist = getMovies.filter((movie) => movie.id === parseInt(movieId))
     if (exist.length > 0) {
       setIsLiked(true)
     }
@@ -78,13 +78,13 @@ const DetailMovie = ({ isMovie = false }) => {
   }, [movieId])
 
   const handleLike = useCallback(
-    (id) => {
-      const isExist = getMovies.filter((m) => m === id)
+    (movie) => {
+      const isExist = getMovies.filter((m) => m.id === movie.id)
       if (isExist.length > 0) {
-        getRemoveLikedMovie(id)
+        getRemoveLikedMovie(movie)
         setIsLiked(false)
       } else {
-        getAddLikedMovie(id)
+        getAddLikedMovie(movie)
         setIsLiked(true)
       }
     },
@@ -130,7 +130,7 @@ const DetailMovie = ({ isMovie = false }) => {
                 <div className='banner__button-utils'>
                   <button
                     className='banner__button-util'
-                    onClick={() => handleLike(movie.id)}
+                    onClick={() => handleLike(movie)}
                   >
                     <IconHeartOutline
                       size={30}

@@ -11,6 +11,7 @@ const RowItem = ({ movie, isMovie = false }) => {
       style={{
         backgroundSize: "cover",
         backgroundImage: `url("${url.baseUrlImage}${movie.poster_path}")`,
+        backgroundPosition: "center center"
       }}
     >
       <div className='row__item-play'>
