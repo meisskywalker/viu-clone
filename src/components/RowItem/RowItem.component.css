@@ -39,7 +39,7 @@
 
 @media (max-width: 425px) {
   .row__item {
-    width: 125px;
-    height: 200px;
+    width: 105px;
+    height: 175px;
   }
 }
