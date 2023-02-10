@@ -6,7 +6,7 @@ This is the result of my journey of learning ReactJS, make a clone of [Viu](http
 2. [Zustand](https://github.com/pmndrs/zustand) (state manager)
 3. [TMDB](https://www.themoviedb.org/) (movie API)
 
-This app is deployed on [Netlify](https://www.netlify.com/). You can visit it [here](https://main--viu-clone.netlify.app/)
+This app is deployed on [Netlify](https://www.netlify.com/). You can visit it [here](https://viu-clone.netlify.app/)
 
 ## Screenshots
 
