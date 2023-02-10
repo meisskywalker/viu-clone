@@ -1,6 +1,6 @@
 # Viu Clone
 
-This the result of my journey of learning ReactJS. These are my tools to build this app:
+This is the result of my journey of learning ReactJS, make a clone of [Viu](https://viu.com/). These are my tools to build this app:
 
 1. [React](https://reactjs.org/) with [Vite](https://vitejs.dev/) (Javascript library and build tool)
 2. [Zustand](https://github.com/pmndrs/zustand) (state manager)
