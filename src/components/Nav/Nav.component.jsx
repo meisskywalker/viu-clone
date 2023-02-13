@@ -28,8 +28,9 @@ const Nav = () => {
 
   const textToKebab = useCallback(toKebabCase, [])
 
-  const handleFromHome = useCallback(() => {
+  const handleNavbarLink = useCallback(() => {
     setIsFromHome(true)
+    getToggleSidenav()
   }, [])
 
   const handleSearchInput = useCallback((event) => {
@@ -65,28 +66,28 @@ const Nav = () => {
             <Link
               className='nav__menu-item'
               to={`/list/${textToKebab("Viu Originals")}`}
-              onClick={handleFromHome}
+              onClick={handleNavbarLink}
             >
               VIU Originals
             </Link>
             <Link
               className='nav__menu-item'
               to={`/list/${textToKebab("Drama")}`}
-              onClick={handleFromHome}
+              onClick={handleNavbarLink}
             >
               Drama
             </Link>
             <Link
               className='nav__menu-item'
               to={`/list/${textToKebab("Anime")}`}
-              onClick={handleFromHome}
+              onClick={handleNavbarLink}
             >
               Anime
             </Link>
             <Link
               className='nav__menu-item'
               to={`/${textToKebab("Favorites")}`}
-              onClick={handleFromHome}
+              onClick={handleNavbarLink}
             >
               Favorites
             </Link>
